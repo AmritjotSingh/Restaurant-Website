@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding: 0px;
+    background-color: rgb(27, 21, 21);
+    margin: 0%;
+}
+
+[class*="col-"]{
+    float: left;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+h2{
+    font-family: "Birthstone", cursive;
+    font-size: 3em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* Navigation bar */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ -------------------------*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    z-index: 10;
+    padding: 0%;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: fixed;
+    width: 100%;
+}
+.flexright{
+    width: 40%;
+    padding: 0%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.flexcont{
+    text-align: center;
+    font-size: 70%;
+    min-width: 77px;
+    color: white;
+}
+.reser{
+    text-align: center;
+    font-size: 70%;
+    min-width: 77px;
+    color: white;
+    border: 2px solid white;
+    box-sizing: none;
+    padding: 2% 5%;
+}
+.reser:hover{
+    background-color: rgb(205, 196, 196);
+    color: black;
+}
+.logo{
+    width: 60%;
+    padding-left: 5%;
+}
+.logo img{
+    width: 10%;
+}
+
+
+/* navigation when accessed on mobiles */
+@media only screen and (max-width: 600px){
+    .logo img{
+        width: 18%;
+    }
+}
+
+/* nav For tablets */
+@media only screen and (max-width: 800px){
+    .flexcont{
+        display: none;
+    }
+    .logo{
+        padding-left: 7%;
+    }
+    .logo img{
+        width: 16%;
+    }
+    .flexright{
+        justify-content: right;
+    }
+    .reser{
+        margin-right: 20px;
+        font-size: 30%;
+    }
+    .txtandimg p{
+        font-size: 0.7em;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* Background Video and Text*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.vidcontainer{
+    position: relative;
+    z-index: -1;
+    top: -20px;
+}
+
+.vidcontainer video{
+    width: 100%;
+}
+
+.FrontText{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    width: 100%;
+    margin: auto;
+    font-size: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Birthstone", cursive;
+    font-size: 2em;
+
+}
+.FrontText img{
+    width: 50%;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* About1 */
+/* This is the about section that is the third layer of the page */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.about{
+    color: white;
+    padding: 53px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+/* image resizing */
+.abtimage img{
+    width: 90%;
+}
+.abttext{
+    padding-left: 7%;
+    padding-right: 4%;
+    font-size: 88%;
+}
+.aboutbox{
+    text-align: center;
+    font-size: 70%;
+    color: white;
+    border: 2px solid white;
+    padding: 2% 5%;
+    display: inline-block;
+    margin-top: 10px;
+}
+.aboutbox:hover{
+    background-color: rgb(205, 196, 196);
+    color: rgb(0, 0, 0);
+}
+.aboutbox a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px){
+    .about{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 40px;
+    }
+    .abttext{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 20px;
+        font-size: 68%;
+        text-align: center;
+    }
+    .abttext2{
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .about{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 40px;
+        padding: 0px;
+    }
+    .abttext{
+        width: 100%;
+        padding: 0px;
+        padding: 0px 30px;
+        font-size: 68%;
+        text-align: center;
+    }
+    .abttext2{
+        text-align: center;
+    }
+
+    .abtimage{
+        width: 90%;
+    }
+    .abtimage img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* About section 2 */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.about2{
+    display: flex;
+    background-color: #f5deb3;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    padding: 4% 6%;
+}
+.about2Mobile{
+    display: none;
+}
+.about2fixed img{
+    width: 100%;
+}
+
+/* About2 on Tablet and mobile Screens  */
+@media only screen and (max-width: 1100px){
+    .about2{
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 40px;
+    }
+    .about2fixed{
+        height: auto;
+        width: 100%;
+    }
+    .Abt2FullScreen{
+        display: none;
+    }
+    .about2Mobile{
+        display:block;
+    }
+    .abttext2{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 20px;
+        font-size: 68%;
+    }
+
+    .about2fixed img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* Menu is divide in three section menu1, menu2 and menu3 */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+#menu{
+    color: white;
+    padding: 2px 20px;
+}
+
+.menu1{
+    text-align: center;
+    font-size: 1.5em;
+}
+.menu1 p{
+    padding: 0% 5%;
+    font-size: 0.7em;
+}
+
+
+.menu2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px 30px;
+    padding: 10px 0px;
+}
+.menuoptions{
+    position: relative;
+    width: 18%;
+    height: 100%;
+    width: 280px;
+    /* height: 423.362px; */
+}
+.menuoptions img{
+    width: 100%;
+    filter: brightness(70%);
+}
+.menuoptions img:hover{
+    filter: brightness(100%);
+}
+.menuoptions p{
+    position: absolute;
+    font-family: "Birthstone", cursive;
+    font-size: 2.6em;
+    top: 2px;
+    z-index: 5;
+}
+.breakfast{
+    left: 87px;
+}
+.lunch{
+    left: 105px;
+}
+.dinner{
+    left: 99px;
+}
+.drink{
+    left: 98px;
+}
+.hh{
+    left: 80px;
+}
+
+
+.menu3{
+    text-align: center;
+    padding: 4% 2%;
+}
+.menubtn{
+    padding: 1% 3%;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+}
+.menubtn:hover{
+    background-color: rgb(205, 196, 196);
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1000px){
+
+    .menuoptions{
+        width: 228.663px;
+        height: 423.362px;
+       
+    }
+    .menuoptions p{
+        font-size: 2.3em;
+    }
+    
+    .breakfast{
+        left: 56px;
+    }
+    .lunch{
+        left: 76px;
+    }
+    .dinner{
+        left: 72px;
+    }
+    .drink{
+        left: 71px;
+    }
+    .hh{
+        left: 57px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* Gift Card */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.Giftcard{
+    position: relative;
+    width: 100%;
+}
+.giftback img{
+    width: 100%;
+    z-index: -1;
+    filter: blur(2px);
+    filter: brightness(80%);
+}
+.giftabs{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.gifttext{
+    font-family: "Birthstone", cursive;
+    font-size: 5em;
+}
+.OrderNow{
+    padding: 1% 3%;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+}
+.OrderNow:hover{
+    background-color: rgb(205, 196, 196);
+    color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 1100px){
+    .gifttext{
+        font-size: 2em;
+        
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+/* Contact Us section */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.contactus{
+    display: flex;
+    width: auto;
+    color: white;
+}
+.contactlogo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.contactlogo img{
+    width: 40%;
+}
+.add, .hours, .contact{
+    padding: 2%;
+}

@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding: 0px;
+background-color: rgb(27, 21, 21);
+color : white;
+    margin: 0%;
+}
+
+
+/* Navigation bar */
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0%;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur;
+    z-index: 1000;
+color: white;
+}
+.flexright{
+    width: 38%;
+    padding: 0%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+}
+.flexcont{
+    text-align: center;
+    font-size: 70%;
+    min-width: 77px;
+    color: white;
+}
+.flexcont a{
+ color: white !important;
+text-decoration : none;
+
+}
+.reser{
+    text-align: center;
+    font-size: 70%;
+    min-width: 77px;
+    color: white;
+    border: 2px solid white;
+    box-sizing: none;
+    padding: 2% 4%;
+}
+.reser:hover{
+    background-color: rgb(205, 196, 196);
+    color: black;
+}
+.logo{
+    width: 60%;
+    padding-left: 5%;
+}
+.logo img{
+    width: 10%;
+}
+
+
+/* navigation when accessed on mobiles */
+@media only screen and (max-width: 600px){
+    
+    .logo img{
+        width: 18%;
+    }
+}
+
+/* nav For tablets */
+@media only screen and (max-width: 800px){
+    .flexcont{
+        display: none;
+    }
+    .logo{
+        padding-left: 7%;
+    }
+    .logo img{
+        width: 16%;
+    }
+    .flexright{
+        justify-content: right;
+    }
+    .reser{
+        margin-right: 20px;
+        font-size: 30%;
+    }
+    .txtandimg p{
+        font-size: 0.7em;
+    }
+}
+
+
+       .container {
+            padding: 0;
+            background-color: rgb(27, 21, 21);
+            color:white;}
+
+      .wcontainer {
+            padding: 0;
+            background-color:#f5deb3 ;
+            color:rgb(27, 21, 21);}
+
+
+        
+
+            .info, .grid-item {
+            padding: 1rem;             
+            text-align: center;
+            margin-bottom: 0.5rem;}
+
+            .info img, .grid-item img {
+            max-width: 50%; 
+            height: auto;
+            margin: 0 auto;            
+            margin-bottom: 0.5rem; 
+            margin-top:1em;}
+
+            .topCont h3{
+                margin-top: 5%;
+            }
+        
+            h3, h1 {
+            color:rgb(27, 21, 21) ;
+
+            padding: 0.5em;
+            text-align: center;
+            margin: 0;}
+            h2 {
+            color: white;
+            text-align:center;
+            }
+            
+            h3, h2{
+                font-family: "Birthstone", cursive;
+                font-weight: bold;
+                font-size: 3em;
+            }
+        
+        form {
+            text-align: center;}
+        
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ced4da;
+            margin-bottom: 10px;}
+        
+        input[type= "button"]{
+            padding: 2%;
+            color: white;
+            background-color: rgb(27, 21, 21);
+            border: 2px solid white;
+        }
+        input[type= "button"]:hover{
+            background-color: rgb(205, 196, 196);
+            color: rgb(0, 0, 0);
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px; 
+            border: none;
+            background-color: rgb(27, 21, 21);
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;}
+        
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: gray;}
+
+            .contactus{
+                display: flex;
+                width: auto;
+                color: white;
+            }
+            .contactlogo{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .contactlogo img{
+                width: 40%;
+            }
+            .add, .hours, .contact{
+                padding: 2%;
+            }
+            .OrderHeading{
+                padding-top: 12%;
+            }
+
+
+/* This is the pop up section which contains all the selected orders and total price */
+
+.orderReceipt{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: none;
+    margin-top: 20px;
+}
+
+.displayOn{
+    display: block;
+}
+#OrderTable{
+    width: 90%;
+    margin: auto;
+}
+
+#OrderTable td{
+    background-color: rgb(237, 231, 219);
+}
+
+.ttl p{
+    margin: 10px;
+}
+.totalAmount{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
